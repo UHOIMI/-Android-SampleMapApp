@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SampleMapTest</string>
+    <string name="title_activity_maps">SampleMapApp</string>
+    <string-array name="sort">
+        <item>昇順</item>
+        <item>降順</item>
+    </string-array>
+</resources>

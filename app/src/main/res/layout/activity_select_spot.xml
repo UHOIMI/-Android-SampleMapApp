@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectSpotActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="検索" />
+
+        <TextView
+            android:id="@+id/selectSpotText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選択したスポット" />
+
+        <ListView
+            android:id="@+id/selectSpotList"
+            android:layout_width="match_parent"
+            android:layout_height="206dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/userSpotText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="あなたが登録したスポット" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateSpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日付：スポット" />
+
+            <Spinner
+                android:id="@+id/sort"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/sort" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/userSpotList"
+            android:layout_width="match_parent"
+            android:layout_height="139dp" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="マップへ" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
